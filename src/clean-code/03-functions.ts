@@ -35,9 +35,24 @@
     // tarea asincrona para verificar nombre
     // ..
     // ..
-    if (checkFullName()) return false;
+    if (checkFullName(fullName)) return false;
 
     console.log('Crear actor', birthdate);
     return true;
   }
+
+  // continue section
+
+  const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }) => {
+
+    if (isDead) return 1500
+
+    if (isSeparated) return 2500;
+
+    return (isRetired) ? 300 : 4000
+
+  }
+
+
+
 })();
